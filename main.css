@@ -5,9 +5,9 @@ body{
 
 .login-form{
     margin: auto;
-    margin-top: 50px;
-    width: 900px;
-    height: 550px;
+    margin-top: 30px;
+    width: 1100px;
+    height: 600px;
     /* border: 1px solid black; */
     border-radius: 10px;
     background-color: white;
@@ -29,14 +29,14 @@ body{
 
 .login-image{
     background-color: #eaeaea;
-    width: 50%;
+    width: 40%;
     height: 100%;
     float: left;
     /* border-radius: 10px; */
 }
 
 .login-input{
-    width: 50%;
+    width: 60%;
     height: 550px;
     float: left;
 }
@@ -51,6 +51,7 @@ form{
 }
 .complete{
     padding: 0 50px;
+    margin: 15px 0;
 }
 .welcome-text{
     text-align: center;
@@ -59,13 +60,25 @@ form{
 }
 
 .input{
-    width: 100%;
     padding: 15px 20px;
-    display: block;
     box-sizing: border-box;
-    margin: 15px 0!important;
+    margin: 10px 0;
     border-radius: 25px;
     border: 1px solid #eaeaea;
+}
+
+.table-input{
+    display: inline-grid;
+    width: 48%;
+}
+
+.to-right{
+    margin-left: 15px;
+}
+
+.full-input{
+    width: 100%;
+    display: block;
 }
 
 .input:focus{
@@ -146,6 +159,9 @@ hr{
     .login-input{
         width: 100%;
     }
+    .to-right{
+        margin-left: 10px;
+    }
 }
 
 @media (max-width: 567px){
@@ -153,5 +169,13 @@ hr{
         margin: auto;
         margin-top: 50px;
         width: 90%;
+        height: 700px;
+    }
+    .input{
+        display: block;
+        width: 100%;
+    }
+    .to-right{
+        margin-left: 0;
     }
 }
